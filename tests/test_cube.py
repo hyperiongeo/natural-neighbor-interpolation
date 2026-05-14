@@ -17,7 +17,7 @@ def known_cube(side_length=1):
         [1, 0, 1],
         [0, 1, 1],
         [1, 1, 1],
-    ], dtype=np.float) * side_length
+    ], dtype=np.float64) * side_length
 
 
 @pytest.mark.parametrize("grid_ranges", [

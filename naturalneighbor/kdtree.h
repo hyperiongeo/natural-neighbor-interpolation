@@ -102,7 +102,7 @@ private:
     typedef std::priority_queue<DistanceTuple, std::vector<DistanceTuple>, SmallestOnTop> MinPriorityQueue;
 
     template<typename NODE_TYPE>
-    struct Sort : std::binary_function<NODE_TYPE, NODE_TYPE, bool> {
+    struct Sort {
         Sort(std::size_t dim) : m_dimension(dim) {}
         bool operator()(const NODE_TYPE &lhs, const NODE_TYPE &rhs) const {
             Point lhsPoint = lhs->split;

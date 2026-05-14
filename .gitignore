@@ -5,7 +5,10 @@ dist
 __pycache__
 *.py[co]
 *.so
+*.pyd
 MANIFEST
 *.egg-info
 .cache
 .python-version
+.tox
+*.png
