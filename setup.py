@@ -1,5 +1,5 @@
 import platform
-from setuptools import Extension, setup
+from setuptools import Extension, setup, find_packages
 import sys
 import sysconfig
 
@@ -108,4 +108,11 @@ if needs_build and not is_metadata_only:
 else:
     # For metadata-only commands, don't require numpy.
     # Metadata is still taken from pyproject.toml via setuptools.
-    setup()
+    setup(
+    name='your_package_name',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        'requests',  # Example dependency
+    ],
+)
