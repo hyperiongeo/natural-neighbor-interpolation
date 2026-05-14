@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: [actions/checkout](https://github.com)@v4
+        uses: [actions/checkout](https://github.com/hyperiongeo/natural-neighbor-interpolation)@v4
 
       - name: Set up Python
         uses: [actions/setup-python](https://github.com/actions/setup-python)@v5
